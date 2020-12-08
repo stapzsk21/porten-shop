@@ -1,0 +1,71 @@
+// USER VARIABLES SECTION
+
+$accent:  #000000;; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: #fff; // Text Color
+$grey: #969696;
+$system: 'Arial', sans-serif; // System Font Family
+$PTSans: 'PTSans', sans-serif; // PTSans Font Family
+$Playfair: 'PlayfairDisplay', sans-serif; // PlayfairDisplay Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+// @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import '../../node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('PTSans', normal, 400, '../fonts/PTSans-Regular.woff2');
+@include font('PlayfairDisplay', normal, 400, '../fonts/PlayfairDisplay-Regular.woff2');
+@include font('PlayfairDisplay', normal, 700, '../fonts/PlayfairDisplay-Bold.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $PTSans;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $textcolor;
+	background-color: $accent;
+	
+}
+
+ul, li, button, p, h1, h2, h3, a {
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}

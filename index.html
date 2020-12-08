@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Porten</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dest/preview.jpg">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<svg width="0" height="0" class="hidden">
+		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="phone">
+		  <path d="M10.6 13.667A10.28 10.28 0 01.333 3.4 3.067 3.067 0 013.4.333c.172-.001.344.015.513.047.164.024.325.064.48.12a.667.667 0 01.434.5l.913 4a.667.667 0 01-.173.613c-.087.094-.094.1-.914.527A6.607 6.607 0 007.9 9.4c.433-.827.44-.833.533-.92a.667.667 0 01.614-.173l4 .913a.667.667 0 01.48.433 2.888 2.888 0 01.166.994 3.067 3.067 0 01-3.093 3.02zm-7.2-12A1.74 1.74 0 001.667 3.4a8.94 8.94 0 008.933 8.933 1.74 1.74 0 001.733-1.733v-.22L9.24 9.667l-.193.366c-.3.58-.52 1-1.08.774A7.901 7.901 0 013.18 6c-.24-.52.213-.76.787-1.06l.366-.18-.713-3.093H3.4z"></path>
+		</symbol>
+		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12" id="login">
+		  <path d="M4.25.167H9.5a1.17 1.17 0 011.167 1.166v9.334A1.17 1.17 0 019.5 11.833H4.25a1.17 1.17 0 01-1.167-1.166V9.5H4.25v1.167H9.5V1.333H4.25V2.5H3.083V1.333A1.17 1.17 0 014.25.167z"></path>
+		  <path d="M4.886 8.094l.822.823L8.625 6 5.708 3.083l-.822.823 1.505 1.51H.75v1.167h5.64L4.887 8.094z"></path>
+		</symbol>
+		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 26" id="logo">
+			<path d="M.477 25V.39h3.937V25H.477zm5.73-11.11v-3.83h2.356c1.71 0 2.636-.832 2.777-2.496V7.14c-.164-1.852-1.09-2.825-2.777-2.918H6.207V.39h2.672c4.266.07 6.41 2.296 6.434 6.68 0 3.398-1.079 5.519-3.235 6.363-.89.304-1.957.457-3.2.457h-2.67zm11.039 4.255V6.578c0-1.242.527-2.508 1.582-3.797C20.234 1.094 22.016.238 24.172.215v3.902c-1.219.024-2.133.68-2.742 1.969-.188.422-.282.773-.282 1.055v11.004c0 1.265.657 2.203 1.97 2.812.398.188.738.281 1.019.281v3.938c-1.336 0-2.672-.48-4.008-1.442-1.899-1.406-2.86-3.27-2.883-5.59zm8.824 7.03v-3.937c.61 0 1.242-.281 1.899-.843.703-.633 1.066-1.383 1.09-2.25V7.14c0-.704-.305-1.383-.915-2.04-.585-.632-1.277-.96-2.074-.984V.215c2.367 0 4.266 1.02 5.696 3.058.82 1.172 1.23 2.274 1.23 3.305v11.567c0 2.601-1.16 4.593-3.48 5.976-1.22.703-2.368 1.055-3.446 1.055zM35.809 25V.39h3.937V25H35.81zm5.73-10.371v-3.516h1.969c2.039 0 3.164-.972 3.375-2.918.023-.21.035-.41.035-.597 0-1.97-.89-3.13-2.672-3.48a7.203 7.203 0 00-1.02-.071H41.54V.39h2.145c3.117.07 5.214 1.23 6.293 3.48.445.938.668 2.016.668 3.234-.024 2.602-.82 4.489-2.391 5.66 1.219.704 1.992 1.958 2.32 3.762.047.305.082.586.106.844l.596 7.63h-3.656l-.527-6.258c-.188-1.969-.715-3.21-1.582-3.726-.516-.258-1.16-.387-1.934-.387H41.54zM52.684 4.223V.39h15.222v3.832h-5.625V25h-3.937V4.223h-5.66zM69.945 25V.39h12.797v3.868h-8.86v6.539h5.555v3.937h-5.554v6.364h8.86V25H69.944zm15.645 0V6.648h.281l3.656 5.872V25H85.59zm0-22.078V.39h3.27l12.374 19.863V25h-1.898L85.59 2.922zm11.707 7.734V.391h3.937v16.136h-.281l-3.656-5.87z"></path>
+		  </symbol>
+		  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="busket">
+			<path d="M20.003 6.812a.917.917 0 00-.753-.395H6.722l-1.058-2.54A1.828 1.828 0 003.972 2.75H1.833v1.833h2.139L8.32 15.02a.916.916 0 00.846.563H16.5a.919.919 0 00.859-.594l2.75-7.333a.916.916 0 00-.106-.844zm-4.138 6.938H9.778l-2.292-5.5h10.441l-2.062 5.5zm-6.24 5.5a1.375 1.375 0 100-2.75 1.375 1.375 0 000 2.75zm6.417 0a1.375 1.375 0 100-2.75 1.375 1.375 0 000 2.75z"></path>
+		  </symbol>
+		  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="search">
+			<path d="M19.25 17.417l-4.725-4.725a6.417 6.417 0 10-1.833 1.834l4.725 4.724 1.833-1.833zM4.583 9.167a4.589 4.589 0 014.584-4.584 4.589 4.589 0 014.583 4.584 4.589 4.589 0 01-4.583 4.583 4.589 4.589 0 01-4.584-4.583z"></path>
+		  </symbol>
+	  </svg>
+
+	<!-- nav-top -->
+
+	<section class="nav-top">
+		<div class="wrapper flex just-between flex-wrap">
+			
+			<ul class="list list-info flex">
+				<li class="list__item">
+					<a href="#" class="list__link flex align-center">
+						<svg class="icon icon__phone">
+							<use xlink:href="#phone"></use>
+						</svg>
+						8 (812) 123-45-67
+					</a>
+				</li>
+				<li class="list__item">Работаем 7 дней в неделю</li>
+				<li class="list__item">9:00 — 18:00</li>
+			</ul>
+		
+			<ul class="list list-login flex">
+				<li class="list__item">
+					<a href="" class="list__link">
+						<svg class="icon icon__login">
+							<use xlink:href="#login"></use>
+						</svg>
+						Войти
+					</a>
+				</li>
+				<li class="list__item"><a href="" class="list__link">Регистрация</a></li>
+			</ul>
+			
+		</div>
+	</section>
+
+	<!-- nav-bottom -->
+
+	<section class="nav-bottom">
+		<div class="wrapper flex just-between flex-wrap align-center">
+			
+			<a href="" class="logo-link">
+				<svg class="logo-img">
+					<use xlink:href="#logo"></use>
+				</svg>
+			</a>
+
+			<ul class="list nav-list flex">
+				<li class="list__item"><a href="#" class="list__link">Понравилось</a></li>
+				<li class="list__item"><a href="#" class="list__link">Личный кабинет</a></li>
+				<li class="list__item"><a href="#" class="list__link">Настройки</a></li>
+			</ul>
+
+			<div class="buttons flex">
+				<button class="buttons__btn busket">
+					<svg class="buttons__icon">
+						<use xlink:href="#busket"></use>
+					</svg>
+				</button>
+				<button class="buttons__btn search">
+					<svg class="buttons__icon">
+						<use xlink:href="#search"></use>
+					</svg>
+				</button>
+				<button class="buttons__btn hamburger-menu">
+					<input id="menu__toggle" type="checkbox" />
+					<label class="menu__btn" for="menu__toggle">
+					  <span></span>
+					</label>
+				
+					<ul class="menu__box flex column just-center">
+						<li><a class="menu__item" href="#">Понравилось</a></li>
+						<li><a class="menu__item" href="#">Личный кабинет</a></li>
+						<li><a class="menu__item" href="#">Настройки</a></li>
+						<li><a class="menu__item menu__item--adaptive" href="#">Корзина</a></li>
+						<li><a class="menu__item menu__item--adaptive" href="#">Поиск</a></li>
+					</ul>
+				</button>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- header -->
+
+	<header class="header">
+		<div class="wrapper flex flex-wrap just-center">
+			
+			<div class="logo flex flex-wrap column">
+				<svg class="logo-img">
+					<use xlink:href="#logo"></use>
+				</svg>
+				<span class="logo__text">санкт-петербург</span>
+			</div>
+
+
+			<p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, iste ut ex sequi animi nam aut, corporis architecto ducimus repellat adipisci voluptatem voluptates nemo. Fugit perferendis suscipit exercitationem aliquam accusantium.</p>
+
+		</div>
+	</header>
+
+	<!-- new-collection -->
+
+	<section class="collections flex flex-wrap">
+		<div class="season">
+			
+			<h2 class="title season__title">СЕЗОН 2020/21</h2>
+
+			<div class="cards wrapper flex flex-wrap just-between">
+				
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card adaptive-element">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				
+			</div>
+
+		</div>
+
+		<div class="new-collection flex align-center column just-end">
+			
+			<h2 class="title new-collection__title">Новая коллекция</h2>
+			<a href="#" class="goods-link">Каталог</a>
+
+		</div>
+
+	</section>
+
+	<!-- old-collection -->
+
+	<section class="collections flex flex-wrap align-center">
+		<img src="images/src/old-collection.png" alt="" class="old-collection--bg">
+		<div class="old-collection">
+			<div class="wrapper flex flex-wrap column align-center">
+				<h2 class="title old-collection__title">коллекция 2018</h2>
+				<p class="old-collection__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio sed voluptatibus ratione perspiciatis accusantium, cum rerum at! Eveniet molestiae similique explicabo! Nostrum, unde placeat consectetur exercitationem minus porro molestias quo.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio sed voluptatibus ratione perspiciatis accusantium, cum rerum at! Eveniet molestiae similique explicabo!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio sed voluptatibus ratione perspiciatis accusantium, cum rerum at! Eveniet molestiae similique explicabo!</p>
+				<a href="" class="goods-link">посмотреть коллекцию</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- new-goods -->
+	
+	<section class="new-goods">
+		<div class="wrapper">
+			
+			<h2 class="title season__title">новые поступления</h2>
+
+			<div class="cards wrapper flex flex-wrap just-between">
+				
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+				
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card">
+					<div class="card__bg">
+						<img class="card__img" src="images/src/clock.png" alt="clock">
+					</div>
+					<p class="card__title">Louis XVI ATHOS</p>
+					<p class="card__cost">165 000 руб.  </p>
+				</div>
+
+				<div class="card"></div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- brends -->
+
+	<section class="brends">
+		<div class="wrapper">
+			
+			<h2 class="title brends__title">наши бренды</h2>
+
+			<div class="brends__images flex flex-wrap just-between">
+				<img class="brends__img" src="images/src/brend.png" alt="brend" srcset="">
+				<img class="brends__img" src="images/src/brend.png" alt="brend" srcset="">
+				<img class="brends__img" src="images/src/brend.png" alt="brend" srcset="">
+				<img class="brends__img adaptive-element" src="images/src/brend.png" alt="brend" srcset="">
+			</div>
+
+		</div>
+	</section>
+
+	<!-- footer -->
+
+	<footer class="footer">
+		<div class="wrapper flex flex-wrap just-between">
+			
+			<div class="about">
+				<h3 class="title">О магазине</h3>
+				<p class="text about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur similique eveniet recusandae molestias provident ad saepe, qui error voluptas blanditiis dolorem laudantium temporibus facilis id, quisquam repellat quas veritatis ex! Aspernatur similique eveniet recusandae molestias provident ad saepe, qui error voluptas blanditiis dolorem laudantium temporibus facilis id, quisquam repellat quas veritatis ex</p>
+			</div>
+
+			
+			<div class="categories">
+				<h3 class="title">Категории</h3>
+				<div class="categories__tags flex flex-wrap just-between">
+					<a href="#" class="tag">часы</a>
+					<a href="#" class="tag">браслеты</a>
+					<a href="#" class="tag">ремни</a>
+					<a href="#" class="tag">ювелирные изделия</a>
+					<a href="#" class="tag">запонки</a>
+				</div>
+			</div>
+			
+			<div class="submit">
+				<h3 class="title">Рассылка</h3>
+				<p class="text submit__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.</p>
+				<form action="" class="form flex">
+					<input class="form__input" type="text" value="Ваша почта">
+					<button href="#" class="form__link">подписаться</button>
+				</form>
+			</div>
+
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ICONS -->
+
+
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
+                                                                                                                                                                        
